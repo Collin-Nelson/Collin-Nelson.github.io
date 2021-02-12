@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<title>Collin Nelson</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		
 	</head>
 	<body>
 		<!--Navigation bar-->
-    		<div id="nav-id"> </div>
-		
-		<script>
-			var xhr= new XMLHttpRequest();
-			xhr.open('GET', 'nav.html', true);
-			xhr.onreadystatechange= function() {
-    				if (this.readyState!==4) return;
-    				if (this.status!==200) return; // or whatever error handling you want
-    				document.getElementById('nav-id').innerHTML= this.responseText;
-			};
-			xhr.send();
-    		</script>
+    		<div id="nav-id">
+			<script>
+				var xhr= new XMLHttpRequest();
+				xhr.open('GET', 'nav.html', true);
+				xhr.onreadystatechange= function() {
+					if (this.readyState!==4) return;
+					if (this.status!==200) return; // or whatever error handling you want
+					document.getElementById('nav-id').innerHTML= this.responseText;
+				};
+				xhr.send();
+			</script>
+		</div>
     		<!--end of Navigation bar-->
 			
 		<div class="container">
-    		<div class="blurb">
         		
 			<h1 style="text-align:center"> Welcome to my Online Portfolio </h1>
 			<img src="/images/Headshot-1.JPG" alt="Collin Nelson Headshot" class="headshot">
@@ -69,13 +70,13 @@
 				</p>
 			<h4> Read more about the projects I've been a part of on my project pages </h4>
 			
-			
-    		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
-    		<ul>
-        		<li><a href="mailto:ctnn2000@gmail.com">ctnn2000@gmail.com</a></li>
-        		<li><a href="https://www.linkedin.com/in/collin-nelson">linkedin.com/in/collin-nelson</a></li>
+    			<ul>
+				
+				<li><a href="mailto:ctnn2000@gmail.com">ctnn2000@gmail.com</a></li>
+				<li><a href="https://www.linkedin.com/in/collin-nelson">linkedin.com/in/collin-nelson</a></li>
+				
 			</ul>
 		</footer>
 	</body>
