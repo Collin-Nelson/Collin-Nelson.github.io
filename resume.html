@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<title>Collin Nelson - Resume</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		
 	</head>
 	<body>
 		<!--Navigation bar-->
-    		<div id="nav-id"> </div>
-		
-		<script>
-			var xhr= new XMLHttpRequest();
-			xhr.open('GET', 'nav.html', true);
-			xhr.onreadystatechange= function() {
-    				if (this.readyState!==4) return;
-    				if (this.status!==200) return; // or whatever error handling you want
-    				document.getElementById('nav-id').innerHTML= this.responseText;
-			};
-			xhr.send();
-    		</script>
+    		<div id="nav-id">
+			<script>
+				var xhr= new XMLHttpRequest();
+				xhr.open('GET', 'nav.html', true);
+				xhr.onreadystatechange= function() {
+					if (this.readyState!==4) return;
+					if (this.status!==200) return; // or whatever error handling you want
+					document.getElementById('nav-id').innerHTML= this.responseText;
+				};
+				xhr.send();
+			</script>
+		</div>
     		<!--end of Navigation bar-->
 		
 		<div class="container">
-    		<div class="blurb">
         		<h1 style="text-align:center">Welcome to my resume</h1>
 			<h2 style="text-align:center"> Feel free to take a look! </h2>
 			
@@ -38,12 +39,14 @@
 			<h3> Here is my resume to view in your browser </h3>
 			<embed src="Collin Nelson Resume.pdf" width="900" height="1000" type="application/pdf">
 			
-    		</div><!-- /.blurb -->
+    		
 		</div><!-- /.container -->
 		<footer>
-    		<ul>
-        		<li><a href="mailto:ctnn2000@gmail.com">email</a></li>
-        		<li><a href="https://www.linkedin.com/in/collin-nelson">linkedin.com/in/collin-nelson</a></li>
+    			<ul>
+				
+				<li><a href="mailto:ctnn2000@gmail.com">email</a></li>
+				<li><a href="https://www.linkedin.com/in/collin-nelson">linkedin.com/in/collin-nelson</a></li>
+				
 			</ul>
 		</footer>
 	</body>
