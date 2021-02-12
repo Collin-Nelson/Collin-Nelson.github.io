@@ -38,6 +38,9 @@ p {
 .hidden {
     display: none !important;
 }
+.project {
+    overflow: auto;
+}
 .projects-p {
     text-indent: 0px;
     float: both;
