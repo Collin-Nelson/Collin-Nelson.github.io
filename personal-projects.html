@@ -1,79 +1,78 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<title>Collin Nelson - Personal Projects</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		
 	</head>
 	<body>
 		<!--Navigation bar-->
-    		<div id="nav-id"> </div>
-		
-		<script>
-			var xhr= new XMLHttpRequest();
-			xhr.open('GET', 'nav.html', true);
-			xhr.onreadystatechange= function() {
-    				if (this.readyState!==4) return;
-    				if (this.status!==200) return; // or whatever error handling you want
-    				document.getElementById('nav-id').innerHTML= this.responseText;
-			};
-			xhr.send();
-    		</script>
+    		<div id="nav-id">
+			<script>
+				var xhr= new XMLHttpRequest();
+				xhr.open('GET', 'nav.html', true);
+				xhr.onreadystatechange= function() {
+					if (this.readyState!==4) return;
+					if (this.status!==200) return; // or whatever error handling you want
+					document.getElementById('nav-id').innerHTML= this.responseText;
+				};
+				xhr.send();
+			</script>
+		</div>
     		<!--end of Navigation bar-->
 		
 		<div class="container">
-    		<div class="blurb">
-        		<h1 style="text-align:center">Welcome to my Personal Projects</h1>
+    			<h1 style="text-align:center">Welcome to my Personal Projects</h1>
 			<h2 style="text-align:center"> Here are some of the personal projects I've done </h2>
-		<br>
-		<br>
-			<div class="hidden">
-			<h3> Python Sudoku Solver </h3>
-			<img src="/images/placeholder.png" class="cover-img">
-			<p class="projects-p">
-				Here is some info about how I coded a recursive Sudoku solving algorithm in Python
-			</p>
-			<p class="projects-p"> Click <a href="/projects/Python-Sudoku-Solver"> here </a> to see more about this project </p>
-		<br>
-		<br>
+
+			<div  class="hidden" class="project">
+				<h3> Python Sudoku Solver </h3>
+				<img src="/images/placeholder.png" class="cover-img">
+				<p class="projects-p">
+					Here is some info about how I coded a recursive Sudoku solving algorithm in Python
+				</p>
+				<p class="projects-p"> Click <a href="/projects/Python-Sudoku-Solver"> here </a> to see more about this project </p>
 			</div>
 			
-			<h3> Eagle Scout Service Project </h3>
-			<img src="/images/Eagle-Project-Cover.jpeg" class="cover-img">
-			<p class="projects-p">
-				My Eagle Scout Service Project was to plan and lead the construction of a 100 square foot outbuilding for my high school's football concessions. 
-				I researched shed building and determined what was needed, then modified framing plans to fit. I then created a materials list and cut list, and 
-				planned out how I would lead the construction, when most of the scouts helping me would be ages 10 to 16. I determined that for the project to run 
-				smoothly and quickly, I would need to organize the project so that each of the walls could be built at the same time. I therefore designed framing 
-				kits, which contained all the material for each wall, as well as instructions. That way, I could lead construction of the fountation and the framing 
-				and sheathing of the floor while the walls were being built. All told, my Eagle project took nearly 700 man-hours to plan and build, with 45 people 
-				helping me. Through this project, I developed project planning and leadership skills, as well as the ability to adapt and overcome problems on the fly.
-				<br><br>
-			</p>
-			<p class="hidden" class="projects-p"> Click <a href="/projects/Eagle-Scout-Service-Project"> here </a> to see more about this project </p>
-		<br>
-		<br>
-			<h3> 3D Printer 2018 </h3>
-			<img src="/images/3D-Printer-2018-Cover.jpg" class="cover-img">
-			<p class="projects-p">
-				My first significant engineering project was building a 3D printer during my third and fourth years of high school. It took me a year to 
-				research, design, and build the first version, but this early prototype was only capable of crude prints with poor surface quality. After another 
-				year of testing, evaluating, and refinment, I was able to achieve high print quality and dimensional accuracy with a second revision of the printer 
-				and significant work in tuning the print parameters. While this revision printed much better, it began to have issues with the axes binding mid-print 
-				on longer prints. This led to several failed prints before I identified the method of binding. In my first year of college, I was then able to design 
-				another revision that avoided this binding issue. I have since moved on to other projects, but continue to infrequently modify the design of this 
-				printer to improve its performance.
-			</p>
-			<p class="projects-p"> Click <a href="/projects/3D-Printer-2018"> here </a> to see more about this project </p>
-		<br>
-		<br>
+			<div class="project">
+				<h3> Eagle Scout Service Project </h3>
+				<img src="/images/Eagle-Project-Cover.jpeg" class="cover-img">
+				<p class="projects-p">
+					TEST1 My Eagle Scout Service Project was to plan and lead the construction of a 100 square foot outbuilding for my high school's football concessions. 
+					I researched shed building and determined what was needed, then modified framing plans to fit. I then created a materials list and cut list, and 
+					planned out how I would lead the construction, when most of the scouts helping me would be ages 10 to 16. I determined that for the project to run 
+					smoothly and quickly, I would need to organize the project so that each of the walls could be built at the same time. I therefore designed framing 
+					kits, which contained all the material for each wall, as well as instructions. That way, I could lead construction of the fountation and the framing 
+					and sheathing of the floor while the walls were being built. All told, my Eagle project took nearly 700 man-hours to plan and build, with 45 people 
+					helping me. Through this project, I developed project planning and leadership skills, as well as the ability to adapt and overcome problems on the fly.
+					<br><br>
+				</p>
+				<p class="hidden" class="projects-p"> Click <a href="/projects/Eagle-Scout-Service-Project"> here </a> to see more about this project </p>
+			</div>
+
+			<div class="project">
+				<h3> 3D Printer 2018 </h3>
+				<img src="/images/3D-Printer-2018-Cover.jpg" class="cover-img">
+				<p class="projects-p">
+					My first significant engineering project was building a 3D printer during my third and fourth years of high school. It took me a year to 
+					research, design, and build the first version, but this early prototype was only capable of crude prints with poor surface quality. After another 
+					year of testing, evaluating, and refinment, I was able to achieve high print quality and dimensional accuracy with a second revision of the printer 
+					and significant work in tuning the print parameters. While this revision printed much better, it began to have issues with the axes binding mid-print 
+					on longer prints. This led to several failed prints before I identified the method of binding. In my first year of college, I was then able to design 
+					another revision that avoided this binding issue. I have since moved on to other projects, but continue to infrequently modify the design of this 
+					printer to improve its performance.
+				</p>
+				<p class="projects-p"> Click <a href="/projects/3D-Printer-2018"> here </a> to see more about this project </p>
+			</div>
 			
-			
-    		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
-    		<ul>
-        		<li><a href="mailto:ctnn2000@gmail.com">email</a></li>
-        		<li><a href="https://www.linkedin.com/in/collin-nelson">linkedin.com/in/collin-nelson</a></li>
+    			<ul>
+				
+				<li><a href="mailto:ctnn2000@gmail.com">email</a></li>
+				<li><a href="https://www.linkedin.com/in/collin-nelson">linkedin.com/in/collin-nelson</a></li>
+				
 			</ul>
 		</footer>
 	</body>
