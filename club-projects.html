@@ -1,149 +1,140 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<title>Collin Nelson - Club Projects</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		
 	</head>
 	<body>
 		<!--Navigation bar-->
-    		<div id="nav-id"> </div>
-		
-		<script>
-			var xhr= new XMLHttpRequest();
-			xhr.open('GET', 'nav.html', true);
-			xhr.onreadystatechange= function() {
-    				if (this.readyState!==4) return;
-    				if (this.status!==200) return; // or whatever error handling you want
-    				document.getElementById('nav-id').innerHTML= this.responseText;
-			};
-			xhr.send();
-    		</script>
-    		<!--end of Navigation bar-->
+    		<div id="nav-id">
+			<script>
+				var xhr= new XMLHttpRequest();
+				xhr.open('GET', 'nav.html', true);
+				xhr.onreadystatechange= function() {
+					if (this.readyState!==4) return;
+					if (this.status!==200) return; // or whatever error handling you want
+					document.getElementById('nav-id').innerHTML= this.responseText;
+				};
+				xhr.send();
+			</script>
+    		</div>
+		<!--end of Navigation bar-->
 		
 		<div class="container">
-    		<div class="blurb">
         		<h1 style="text-align:center">Welcome to my Club Projects</h1>
 			<h2 style="text-align:center"> Here are some of the club projects I've been a part of </h2>
-		<br>
-		<br>
-			<div>
-			<h3> Robot in Three Days 2021 </h3>
-			<img src="/images/Ri3D-2021-Cover.jpg" class="cover-img">
-			<p class="projects-p">
-				In three days, we revised our robot from Ri3D 2020 to better acomplish the 2021 challenge, which was similar to 2020's challenge due to COVID-19. 
-				I led the build team to fix our ball intake system, repair the pnumatics, build and mount a mechanism to shoot balls, and install a gyroscope. 
-				We worked slowly because of the additional distancing and sanitation requirements imposed by COVID, as well as having a significantly smaller team 
-				spread over multiple locations across Raliegh and North Carolina. We worked hard to effectively communicate between workshops, utilizing 
-				walkie-talkies and a remote CAD team to help each build site understand how different components would fit together on the final robot. Our 
-				biggest challenge was designing components to fit together properly, as everything fabricated at the remote sites couldn't be brought to the 
-				main space until the last day.
-				<br><br><br>
-			</p>
-			<p class="hidden" class="projects-p"> Click <a href="/projects/Robot-in-Three-Days-2021"> here </a> to see more about this project </p>
+
+			<div class="project">
+				<h3> Robot in Three Days 2021 </h3>
+				<img src="/images/Ri3D-2021-Cover.jpg" class="cover-img">
+				<p class="projects-p">
+					In three days, we revised our robot from Ri3D 2020 to better acomplish the 2021 challenge, which was similar to 2020's challenge due to COVID-19. 
+					I led the build team to fix our ball intake system, repair the pnumatics, build and mount a mechanism to shoot balls, and install a gyroscope. 
+					We worked slowly because of the additional distancing and sanitation requirements imposed by COVID, as well as having a significantly smaller team 
+					spread over multiple locations across Raliegh and North Carolina. We worked hard to effectively communicate between workshops, utilizing 
+					walkie-talkies and a remote CAD team to help each build site understand how different components would fit together on the final robot. Our 
+					biggest challenge was designing components to fit together properly, as everything fabricated at the remote sites couldn't be brought to the 
+					main space until the last day.
+					<br><br><br>
+				</p>
+				<p class="hidden" class="projects-p"> Click <a href="/projects/Robot-in-Three-Days-2021"> here </a> to see more about this project </p>
 			</div>
-		<br>
-		<br>
-			<div>
-			<h3> Research and Development Club CNC </h3>
-			<img src="/images/EAC-CNC-Cover.png" class="cover-img">
-			<p class="projects-p">
-				Designing an epoxy-granite composite CNC machine in a group of about 25 students to be built and donated to the NC State Mechanical Engineering 
-				department. We are creating a generatively designed frame using Autodesk Fusion 360 that will be cast in 3D printed molds. We lack the ability 
-				to work with cast iron, so we will use epoxy-granite composite to fabricate a large, single-piece frame with excellent damping and rigidity 
-				characteristics. Generative design will allow us to create a sturdy frame with the mechanical strength required of a CNC. Throughout this project 
-				I have worked primerily on the spindle, including designing a mechanism to handle through-spindle coolent, depress the drawbar to allow automatic 
-				tool changing, and still allow the spindle to be direct driven by a servo motor above the drawbar and coolent supply. The design of this part has 
-				been especially challenging because both the drawbar force and the coolent have to be delivered through the mechanical power connection between 
-				the motor and spindle.
-				<br>
-				<br>
-			</p>
-			<p class="hidden" class="projects-p"> Click <a href="/projects/EAC-CNC"> here </a> to see more about this project </p>
+
+			<div class="project">
+				<h3> Research and Development Club CNC </h3>
+				<img src="/images/EAC-CNC-Cover.png" class="cover-img">
+				<p class="projects-p">
+					Designing an epoxy-granite composite CNC machine in a group of about 25 students to be built and donated to the NC State Mechanical Engineering 
+					department. We are creating a generatively designed frame using Autodesk Fusion 360 that will be cast in 3D printed molds. We lack the ability 
+					to work with cast iron, so we will use epoxy-granite composite to fabricate a large, single-piece frame with excellent damping and rigidity 
+					characteristics. Generative design will allow us to create a sturdy frame with the mechanical strength required of a CNC. Throughout this project 
+					I have worked primerily on the spindle, including designing a mechanism to handle through-spindle coolent, depress the drawbar to allow automatic 
+					tool changing, and still allow the spindle to be direct driven by a servo motor above the drawbar and coolent supply. The design of this part has 
+					been especially challenging because both the drawbar force and the coolent have to be delivered through the mechanical power connection between 
+					the motor and spindle.
+					<br>
+					<br>
+				</p>
+				<p class="hidden" class="projects-p"> Click <a href="/projects/EAC-CNC"> here </a> to see more about this project </p>
 			</div>
 			
-			<div class="hidden">
-		<br>
-		<br>
-			<h3> ASME Innovative Additive Manufacturing Challenge 2020 </h3>
-			<img src="/images/placeholder.png" class="cover-img">
-			<p class="projects-p">
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-				Here is some info about ASME IAM3D 2020
-			</p>
-			<p class="hidden" class="projects-p"> Click <a href="/projects/ASME-IAM3D-2020"> here </a> to see more about this project </p>
+			<div class="hidden" class="project">
+				<h3> ASME Innovative Additive Manufacturing Challenge 2020 </h3>
+				<img src="/images/placeholder.png" class="cover-img">
+				<p class="projects-p">
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+					Here is some info about ASME IAM3D 2020
+				</p>
+				<p class="hidden" class="projects-p"> Click <a href="/projects/ASME-IAM3D-2020"> here </a> to see more about this project </p>
+			</div>
+
+			<div class="project">
+				<h3> ASME Student Design Competition 2020 </h3>
+				<img src="/images/ASME-SDC-2020-Cover.jpg" class="cover-img">
+				<p class="projects-p">
+					Worked to design a robot to build paper towers. Our robot had to be able to build three different types of towers; one that held the most weight, 
+					one that held a small weight as high as possible, and one that was as tall as we could make it with limited time. The robot could be fed a single 
+					sheet of paper at a time and remotely controlled, but had to do physically do all folding and construction itself. This challenge was particularly 
+					because the robot to make these three towers had to fit in a 50 cm cube, yet be able to fold and stack paper quickly in a very strong manner. We 
+					eventually settled on rolling paper into a tube, as the robot could hold each previous sheet inside the next sheet, keeping the tower from unrolling.
+					This also meant we didn't have to fold paper, just feed it into the robot, roll it into a tube, and feed the assembled tube upward. While we learned 
+					a lot through the process of designing and prototyping this system, COVID-19 lockdowns in March meant we were unfortunately never able to build and 
+					test a full robot.
+					<br><br><br>
+				</p>
+				<p class="hidden" class="projects-p"> Click <a href="/projects/ASME-SDC-2020"> here </a> to see more about this project </p>
 			</div>
 			
-		<br>
-		<br>
-			<div>
-			<h3> ASME Student Design Competition 2020 </h3>
-			<img src="/images/ASME-SDC-2020-Cover.jpg" class="cover-img">
-			<p class="projects-p">
-				Worked to design a robot to build paper towers. Our robot had to be able to build three different types of towers; one that held the most weight, 
-				one that held a small weight as high as possible, and one that was as tall as we could make it with limited time. The robot could be fed a single 
-				sheet of paper at a time and remotely controlled, but had to do physically do all folding and construction itself. This challenge was particularly 
-				because the robot to make these three towers had to fit in a 50 cm cube, yet be able to fold and stack paper quickly in a very strong manner. We 
-				eventually settled on rolling paper into a tube, as the robot could hold each previous sheet inside the next sheet, keeping the tower from unrolling.
-				This also meant we didn't have to fold paper, just feed it into the robot, roll it into a tube, and feed the assembled tube upward. While we learned 
-				a lot through the process of designing and prototyping this system, COVID-19 lockdowns in March meant we were unfortunately never able to build and 
-				test a full robot.
-				<br><br><br>
-			</p>
-			<p class="hidden" class="projects-p"> Click <a href="/projects/ASME-SDC-2020"> here </a> to see more about this project </p>
+			<div class="project">
+				<h3> Robot in Three Days 2020 </h3>
+				<img src="/images/Ri3D-2020-Cover.png" class="cover-img">
+				<p class="projects-p">
+					Faced with a multifaceted challenge, we devised strategy to score the most points, ideated mechanisms, and built a functioning robot in three 
+					days. This was our first time trying to build a robot in three days and the semester began halfway through, but we were still able to finish 
+					and mount most of the mechanisms to the robot. We developed a system to pull balls in over the robot's outer frame and required "bumpers," then 
+					transport balls through the middle of the robnot to be ejected into a goal several feet higher at the other end of the robot. We also had a 
+					mechanism that extended to rotate a wheel above the robot until it detected the correct color. The final system was a climbing system that used 
+					a latching hook that detached from an extendable arm when the winch began hoisting the robot off the ground. This climbing system, however, was 
+					not able to be mounted before we ran out of time. We went through the engineering design process, first identifying the tasks we wanted to 
+					accomplish, then designing mechanical systems out of the material on hand. We then tested and revised our designs until we developed a functioning 
+					system. 
+				</p>
+				<p class="hidden" class="projects-p"> Click <a href="/projects/Robot-in-Three-Days-2020"> here </a> to see more about this project </p>
 			</div>
-		<br>
-		<br>
-			<div>
-			<h3> Robot in Three Days 2020 </h3>
-			<img src="/images/Ri3D-2020-Cover.png" class="cover-img">
-			<p class="projects-p">
-				Faced with a multifaceted challenge, we devised strategy to score the most points, ideated mechanisms, and built a functioning robot in three 
-				days. This was our first time trying to build a robot in three days and the semester began halfway through, but we were still able to finish 
-				and mount most of the mechanisms to the robot. We developed a system to pull balls in over the robot's outer frame and required "bumpers," then 
-				transport balls through the middle of the robnot to be ejected into a goal several feet higher at the other end of the robot. We also had a 
-				mechanism that extended to rotate a wheel above the robot until it detected the correct color. The final system was a climbing system that used 
-				a latching hook that detached from an extendable arm when the winch began hoisting the robot off the ground. This climbing system, however, was 
-				not able to be mounted before we ran out of time. We went through the engineering design process, first identifying the tasks we wanted to 
-				accomplish, then designing mechanical systems out of the material on hand. We then tested and revised our designs until we developed a functioning 
-				system. 
-			</p>
-			<p class="hidden" class="projects-p"> Click <a href="/projects/Robot-in-Three-Days-2020"> here </a> to see more about this project </p>
+
+			<div class="hidden" class="project">
+				<h3> FRC/FTC ROBOTICS PLACEHOLDER </h3>
+				<img src="/images/placeholder.png" class="cover-img">
+				<p class="projects-p">
+					Here is some info about how we designs and built FRC/FTC robots. 
+					make each robot/season different
+				</p>
+				<p class="hidden" class="projects-p"> Click <a href="/projects/High-School-Robotics"> here </a> to see more about this project </p>
 			</div>
-		<br>
-		<br>
-			<div class="hidden">
-			<h3> FRC/FTC ROBOTICS PLACEHOLDER </h3>
-			<img src="/images/placeholder.png" class="cover-img">
-			<p class="projects-p">
-				Here is some info about how we designs and built FRC/FTC robots. 
-				make each robot/season different
-			</p>
-			<p class="hidden" class="projects-p"> Click <a href="/projects/High-School-Robotics"> here </a> to see more about this project </p>
-			</div>
-		<br>
-		<br>
-			
-			
-    		</div><!-- /.blurb -->
+
 		</div><!-- /.container -->
 		<footer>
-    		<ul>
-        		<li><a href="mailto:ctnn2000@gmail.com">email</a></li>
-        		<li><a href="https://www.linkedin.com/in/collin-nelson">linkedin.com/in/collin-nelson</a></li>
+    			<ul>
+				
+				<li><a href="mailto:ctnn2000@gmail.com">email</a></li>
+				<li><a href="https://www.linkedin.com/in/collin-nelson">linkedin.com/in/collin-nelson</a></li>
+				
 			</ul>
 		</footer>
 	</body>
